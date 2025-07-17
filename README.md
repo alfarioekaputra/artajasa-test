@@ -38,6 +38,22 @@ npm install
 npm run dev
 ```
 
+---
+
+## Dev Manual
+
+```bash
+npm run tailwind:watch
+```
+
+Open new terminal / tab
+
+```bash
+go run main.go
+```
+
+---
+
 ## Build
 ```bash
 npm run tailwind:build
