@@ -10,7 +10,7 @@ Unduh Go https://go.dev/doc/install
 
 Node.js & npm: Node.js .
 
-Undun Nodejs https://nodejs.org/en/download
+Unduh Nodejs https://nodejs.org/en/download
 
 Nodemon: Alat untuk hot-reloading Go.
 
