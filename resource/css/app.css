@@ -13,3 +13,18 @@
 @plugin "daisyui" {
     themes: light --default;
 }
+
+body {
+    font-family: var(--font-rubik);
+}
+
+.card.image-full figure img {
+    filter: brightness(
+        70%
+    ) !important; /* Contoh: membuat gambar 70% cerah (masih ada sedikit gelap) */
+}
+
+.card.image-full::before {
+    background-image: none !important;
+    opacity: 1 !important;
+}
