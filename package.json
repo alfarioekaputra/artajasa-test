@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "devDependencies": {
-    "@tailwindcss/typography": "^0.5.16"
+    "@tailwindcss/typography": "^0.5.16",
+    "concurrently": "^9.2.0",
+    "nodemon": "^3.1.10"
   },
   "keywords": [],
   "author": "",
@@ -17,7 +19,9 @@
     "tailwindcss": "^4.1.11"
   },
   "scripts": {
-    "build:css": "postcss resource/css/app.css -o public/css/output.css",
-    "tailwind:watch": "tailwindcss -i resource/css/app.css -o public/css/output.css --postcss --watch"
+    "tailwind:build": "tailwindcss -i resource/css/app.css -o public/css/output.css --postcss",
+    "tailwind:watch": "tailwindcss -i resource/css/app.css -o public/css/output.css --postcss --watch",
+    "dev-go": "nodemon --exec go run main.go --signal SIGTERM",
+    "dev": "concurrently \"npm run tailwind:watch\" \"npm run dev-go\""
   }
 }

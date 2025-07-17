@@ -1,74 +1,124 @@
-<nav class="relative z-50 px-6 py-4">
-    <div class="max-w-7xl mx-auto">
-        <div class="flex justify-between items-center h-16">
-            <div class="flex justify-start items-center">
-                <!-- Logo -->
-                <div class="flex-shrink-0 mr-10">
-                    <img
-                        src="/images/modena.png"
-                        alt="MODENA"
-                        width="150px"
-                        height="55.83px"
-                    />
+<header class="absolute w-full z-50">
+    <div class="container mx-auto py-8">
+        <div class="flex justify-between items-center">
+            <!-- Bagian Kiri: Logo dan Mobile Dropdown (Hamburger Menu) -->
+            <div class="flex items-center">
+                <!-- Mobile Dropdown (Hamburger Menu) - Terlihat di mobile, tersembunyi di desktop -->
+                <div class="dropdown lg:hidden mr-4">
+                    <!-- Tambahkan mr-4 untuk jarak ke logo -->
+                    <div tabindex="0" role="button" class="btn btn-ghost">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5 text-white"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16"
+                            />
+                        </svg>
+                    </div>
+                    <ul
+                        tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+                    >
+                        <li><a href="#">Product</a></li>
+                        <li><a href="#">Culinaria</a></li>
+                        <li><a href="#">Kitchen Design</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Promotions</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Our Location</a></li>
+                    </ul>
                 </div>
 
-                <!-- Navigation Links -->
-                <div class="hidden md:block">
-                    <div class="flex items-baseline space-x-1">
-                        <a
-                            href="#"
-                            class="text-white px-3 py-2 text-sm font-normal font-rubik"
-                            >Products</a
-                        >
-                        <a
-                            href="#"
-                            class="text-white px-3 py-2 text-sm font-normal font-rubik"
-                            >Culinaria</a
-                        >
-                        <a
-                            href="#"
-                            class="text-white px-3 py-2 text-sm font-normal font-rubik"
-                            >Kitchen Design</a
-                        >
-                        <a
-                            href="#"
-                            class="text-white px-3 py-2 text-sm font-normal font-rubik"
-                            >Blog</a
-                        >
-                        <a
-                            href="#"
-                            class="text-white px-3 py-2 text-sm font-normal font-rubik"
-                            >Promotions</a
-                        >
-                        <a
-                            href="#"
-                            class="text-white px-3 py-2 text-sm font-normal font-rubik"
-                            >Services</a
-                        >
-                        <a
-                            href="#"
-                            class="text-white px-3 py-2 text-sm font-normal font-rubik"
-                            >Our Location</a
-                        >
-                    </div>
+                <!-- Logo -->
+                <div class="w-[150px] flex items-center">
+                    <img src="/images/modena.png" alt="modena" />
+                    <!-- Pastikan tinggi logo diterapkan -->
+                </div>
+
+                <!-- Desktop Menu - Tersembunyi di mobile, terlihat di desktop -->
+                <div class="hidden lg:block ml-10">
+                    <!-- Tambahkan ml-10 untuk jarak dari logo -->
+                    <ul class="flex items-baseline space-x-1">
+                        <li class="mx-3 py-6">
+                            <a
+                                href="#"
+                                class="text-white hover:underline text-sm font-normal"
+                                >Product</a
+                            >
+                        </li>
+                        <li class="mx-3 py-6">
+                            <a
+                                href="#"
+                                class="text-white hover:underline text-sm font-normal"
+                                >Culinaria</a
+                            >
+                        </li>
+                        <li class="mx-3 py-6">
+                            <a
+                                href="#"
+                                class="text-white hover:underline text-sm font-normal"
+                                >Kitchen Design</a
+                            >
+                        </li>
+                        <li class="mx-3 py-6">
+                            <a
+                                href="#"
+                                class="text-white hover:underline text-sm font-normal"
+                                >Blog</a
+                            >
+                        </li>
+                        <li class="mx-3 py-6">
+                            <a
+                                href="#"
+                                class="text-white hover:underline text-sm font-normal"
+                                >Promotions</a
+                            >
+                        </li>
+                        <li class="mx-3 py-6">
+                            <a
+                                href="#"
+                                class="text-white hover:underline text-sm font-normal"
+                                >Services</a
+                            >
+                        </li>
+                        <li class="mx-3 py-6">
+                            <a
+                                href="#"
+                                class="text-white hover:underline text-sm font-normal"
+                                >Our Location</a
+                            >
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <!-- Right side icons -->
+
+            <!-- Bagian Kanan: Bahasa dan Ikon -->
             <div class="flex items-center space-x-8">
-                <div class="flex items-center space-x-2">
-                    <span class="text-sm font-normal font-rubik text-white"
-                        >ID</span
-                    >
-                    <span class="text-sm font-normal font-rubik text-white"
-                        >|</span
-                    >
-                    <span class="text-sm font-bold font-rubik text-yellow-400"
-                        >EN</span
-                    >
+                <div class="flex items-center space-x-1 mr-10">
+                    <span class="text-sm font-normal text-white">ID</span>
+                    <span class="text-sm font-normal text-white">|</span>
+                    <span class="text-sm font-bold text-yellow-400">EN</span>
                 </div>
-                <img src="/images/user.png" width="32px" height="32px" />
-                <img src="/images/cart.png" width="32px" height="32px" />
+                <img
+                    src="/images/user.png"
+                    width="32px"
+                    height="32px"
+                    class="ml-2"
+                />
+                <img
+                    src="/images/cart.png"
+                    width="32px"
+                    height="32px"
+                    class="ml-2"
+                />
             </div>
         </div>
     </div>
-</nav>
+</header>
